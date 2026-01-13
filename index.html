@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoTrip - Calculadora de CO₂</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>EcoTrip 🌱</h1>
+    <p class="subtitle">Simulador de impacto ambiental para viagens</p>
+
+    <form class="form">
+      <label for="transporte">Meio de transporte:</label>
+      <select id="transporte">
+        <option value="">Selecione</option>
+        <option value="moto">Moto</option>
+        <option value="carro">Carro</option>
+        <option value="onibus">Ônibus</option>
+      </select>
+
+      <label for="distancia">Distância (km):</label>
+      <input type="number" id="distancia" placeholder="Ex: 15">
+
+      <button type="button" id="btnCalcular">Calcular impacto</button>
+
+    </form>
+
+    <div class="resultado">
+        <p class="placeholder">Preencha os dados para ver seu impacto 🌍</p>
+    </div>
+
+    <div class="historico">
+      <h3>Últimas simulações</h3>
+        <ul id="listaHistorico"></ul>
+    </div>
+
+
+    <section class="info">
+  <h2>Como funciona?</h2>
+  <p>
+    O EcoTrip estima a emissão de dióxido de carbono (CO₂) com base no meio de transporte escolhido
+    e na distância percorrida.
+  </p>
+  <p>
+    Os valores são aproximados e servem apenas como referência educacional.
+  </p>
+</section>
+
+
+  </main>
+
+  <footer class="footer">
+    <p><strong>EcoTrip</strong> — Simulador de impacto ambiental para viagens</p>
+    <p>Projeto educacional sobre sustentabilidade e tecnologia</p>
+    <p>Desenvolvido por Kleber Rafael © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
