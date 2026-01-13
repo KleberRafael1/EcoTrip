@@ -208,3 +208,13 @@ button:disabled {
   align-items: center;
   opacity: 0.85;
 }
+
+@media (max-width: 600px) {
+  .footer {
+    position: relative;
+  }
+
+  body {
+    padding-bottom: 20px;
+  }
+}
